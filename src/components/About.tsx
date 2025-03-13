@@ -13,7 +13,9 @@ function About() {
       />
       <Stack justifyContent={"space-between"} flex={1}>
         <Text fontSize={"50px"}>Welcome To</Text>
-        <Text fontSize={"50px"}>My Personal Portfolio</Text>
+        <Text fontSize={"50px"} textDecor={"underline"}>
+          My Personal Portfolio
+        </Text>
 
         <Text fontSize={"20px"}>
           Hi! My name is zulihsyam and I am a self-taught frontend developer.

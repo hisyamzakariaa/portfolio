@@ -26,7 +26,7 @@ function Tech() {
       justifyContent={"center"}
       alignItems={"center"}
     >
-      <Text fontSize={"50px"} textAlign={"center"}>
+      <Text textDecor={"underline"} fontSize={"50px"} textAlign={"center"}>
         My Stacks
       </Text>
       <Text textAlign={"justify"} maxW={"60%"}>
