@@ -3,7 +3,7 @@ import React from "react";
 
 function About() {
   return (
-    <HStack id="about" maxW={"1100px"} p={3} gap={10}>
+    <HStack h={"100vh"} id="about" maxW={"1100px"} p={3} gap={10}>
       <Image
         borderRadius={"100%"}
         h={"200px"}
@@ -15,10 +15,10 @@ function About() {
         <Text fontSize={"50px"}>Welcome To</Text>
         <Text fontSize={"50px"}>My Personal Portfolio</Text>
 
-        <Text>
+        <Text fontSize={"20px"}>
           Hi! My name is zulihsyam and I am a self-taught frontend developer.
         </Text>
-        <Text>
+        <Text textAlign={"justify"}>
           Self-taught creative and detail-oriented Front-End Developer in
           building responsive, user-centric websites and web applications.
           Specializing in modern web technologies such as React JS and Next JS,

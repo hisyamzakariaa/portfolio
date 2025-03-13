@@ -22,7 +22,7 @@ export default function Home() {
     <Stack h={"100vh"}>
       <Navigation />
 
-      <Stack flex={1} border={"1px solid red"} alignItems={"center"}>
+      <Stack flex={1} alignItems={"center"}>
         <About />
         <Tech />
         <WorkHistory />
