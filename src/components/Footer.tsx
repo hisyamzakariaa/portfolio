@@ -1,6 +1,6 @@
-import { HStack, Stack, Text, VStack } from "@chakra-ui/react";
+import { HStack, SimpleGrid, Stack, Text, VStack } from "@chakra-ui/react";
 import React, { ReactNode } from "react";
-import { FaGithub, FaLinkedin } from "react-icons/fa";
+import { FaCopyright, FaGithub, FaLinkedin } from "react-icons/fa";
 import { HiOutlineMail } from "react-icons/hi";
 import { IoCall } from "react-icons/io5";
 
@@ -21,13 +21,8 @@ const items: { label: string; value?: string; icon: ReactNode }[] = [
 
 function Footer() {
   return (
-    <Stack
-      bgColor={"#f5f5f5"}
-      border={"1px solid green"}
-      color={"#27445d"}
-      justifySelf={"flex-end"}
-    >
-      <VStack>
+    <Stack p={3} bgColor={"#f5f5f5"} color={"#27445d"} alignItems={"center"}>
+      <SimpleGrid columns={2} columnGap={10} rowGap={3} w={"fit-content"}>
         {items.map((item, index) => (
           <HStack
             _hover={item.value?.includes("https") ? { color: "#9ACBD0" } : {}}
@@ -41,7 +36,11 @@ function Footer() {
             {item.icon} <Text>{item.label}</Text>
           </HStack>
         ))}
-      </VStack>
+      </SimpleGrid>
+      <HStack>
+        <FaCopyright />
+        <Text fontSize={"xs"}>Created by Hisyam Zakaria</Text>
+      </HStack>
     </Stack>
   );
 }
