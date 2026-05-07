@@ -1,4 +1,3 @@
-import { Button } from "@/components/ui/button";
 import CustomButton from "@/components/ui/CustomButton";
 import HStack from "@/components/ui/HStack";
 import StarIcon from "@/components/ui/StarIcon";
